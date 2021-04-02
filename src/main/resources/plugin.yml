@@ -1,0 +1,8 @@
+name: PokeNewDrop
+main: lt.pokenewdrop.PokeNewDrop
+version: 1.0.1
+author: Laotou-QQ18922569
+commands:
+  pnd:
+    aliases: [pnd]
+    description: 掉落物重置

@@ -10,28 +10,57 @@ public class DropData {
 
     private KillPokemonEnum type = KillPokemonEnum.ALL;
 
-    private boolean clear = false;
+    private boolean clear = true;
 
+    private int random = 100;
+
+    private String fileName = "";
+
+    private String world = "world";
 
     public DropData(List<String> commands, List<String> items) {
         this.commands = commands;
         this.items = items;
     }
 
-    public DropData(List<String> commands, List<String> items, KillPokemonEnum type, boolean clear) {
+    public DropData(List<String> commands, List<String> items, KillPokemonEnum type, boolean clear,int random,String fileName,String world) {
         this.commands = commands;
         this.items = items;
         this.type = type;
         this.clear = clear;
+        this.random = random;
+        this.fileName = fileName;
+        this.world = world;
+    }
+
+    public int getRandom() {
+        return random;
+    }
+
+    public void setRandom(int random) {
+        this.random = random;
+    }
+
+    public String getWorld() {
+        return world;
+    }
+
+    public void setWorld(String world) {
+        this.world = world;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 
     public List<String> getCommands() {
         return commands;
     }
 
-    public void setCommands(List<String> commands) {
-        this.commands = commands;
-    }
 
     public List<String> getItems() {
         return items;
@@ -45,9 +74,6 @@ public class DropData {
         this.type = type;
     }
 
-    public void setItems(List<String> items) {
-        this.items = items;
-    }
 
 
     public boolean isClear() {
@@ -58,15 +84,6 @@ public class DropData {
         this.clear = clear;
     }
 
-    public class Drop{
 
-        int i;
-        String str;
-
-        public Drop(int i, String str) {
-            this.i = i;
-            this.str = str;
-        }
-    }
 
 }

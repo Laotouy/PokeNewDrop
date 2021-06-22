@@ -1,7 +1,9 @@
 name: PokeNewDrop
 main: lt.pokenewdrop.PokeNewDrop
-version: 1.0.1
+version: 2.0
 author: Laotou-QQ18922569
+depend:
+  - BrAPI
 commands:
   pnd:
     aliases: [pnd]

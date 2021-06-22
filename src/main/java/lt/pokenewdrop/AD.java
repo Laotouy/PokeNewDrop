@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 public class AD {
+
     public AD() {
 
         try {
@@ -19,8 +20,6 @@ public class AD {
         }catch (Exception ex){
 
         }
-
-
-
     }
+
 }
